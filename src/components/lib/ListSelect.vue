@@ -41,7 +41,10 @@
     computed: {
       options () {
         return this.list.map((e, i) => {
-          return { value: e[this.optionValue], text: this.buildText(e) }
+           var ret = e;
+           ret.value = e[this.optionValue];
+           ret.text = this.buildText(e);
+           return ret
         })
       },
       item () {
