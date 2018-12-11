@@ -207,6 +207,7 @@ export default {
   }
 }
 </script>
+<style scoped src="semantic-ui-css/semantic.css"></style>
 <style scoped src="semantic-ui-label/label.css"></style>
 <style scoped src="semantic-ui-dropdown/dropdown.css"></style>
 <style>
