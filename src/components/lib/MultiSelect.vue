@@ -42,6 +42,9 @@
              @click.stop="selectItem(option)"
              @mousedown="mousedownItem"
              @mouseenter="pointerSet(idx)">
+          <span v-if="option.hasOwnProperty('depth')">
+            <span v-for="n in option.depth-1">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </span>   
           {{option.text}}
         </div>
       </template>
