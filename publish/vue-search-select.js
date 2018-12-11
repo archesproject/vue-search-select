@@ -3114,9 +3114,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _vm.pointerSet(idx)
 	        }
 	      }
-	    }, [_vm._l((option.depth - 1), function(n) {
+	    }, [(option.hasOwnProperty('depth')) ? _c('span', _vm._l((option.depth - 1), function(n) {
 	      return _c('span', [_vm._v("    ")])
-	    }), _vm._v("\n        " + _vm._s(option.text) + "\n      ")], 2)]
+	    })) : _vm._e(), _vm._v("\n        " + _vm._s(option.text) + "\n      ")])]
 	  })], 2)])
 	},staticRenderFns: []}
 
