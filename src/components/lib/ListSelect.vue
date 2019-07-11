@@ -8,6 +8,8 @@
     render: function (createElement) {
       return createElement(BasicSelect, {
         props: {
+          id: this.id,
+          name: this.name,
           options: this.options,
           selectedOption: this.item,
           isError: this.isError,
@@ -57,7 +59,7 @@
     },
     methods: {
       buildText (e) {
-        if (e[this.optionValue]) {
+        if (e[this.optionValue] !== undefined) {
           if (this.customText) {
             return this.customText(e)
           } else {

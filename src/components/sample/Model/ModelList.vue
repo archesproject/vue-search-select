@@ -13,6 +13,8 @@
                              v-model="objectItem"
                              option-value="code"
                              option-text="name"
+                             id="mySelectId"
+                             name="mySelectName"
                              placeholder="select item"
                              @searchchange="printSearchText">
           </model-list-select>
@@ -39,6 +41,8 @@
         </table>
       </div>
     </div>
+    
+    <h3>String type Option value ModelList</h3>
     <div class="flexbox">
       <div class="flex-content">
         <div>
@@ -71,6 +75,8 @@
         </table>
       </div>
     </div>
+    
+    <h3>Number type Option Value ModelList</h3>
     <div class="flexbox">
       <div class="flex-content">
         <div>
@@ -136,6 +142,7 @@
         ],
         stringItem: '',
         options3: [
+          { id: 0, name: 'a0', desc: 'desc00' },
           { id: 1, name: 'aa', desc: 'desc01' },
           { id: 2, name: 'ab', desc: 'desc02' },
           { id: 3, name: 'bc', desc: 'desc03' },

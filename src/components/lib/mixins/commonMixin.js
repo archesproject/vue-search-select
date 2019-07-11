@@ -3,6 +3,13 @@ import { escapedRegExp } from '../utils'
 /* mixin for all */
 export default {
   props: {
+    id: {
+      default: null
+    },
+    name: {
+      type: String,
+      default: ''
+    },
     isError: {
       type: Boolean,
       default: false
