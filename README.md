@@ -4,6 +4,15 @@ A Vue.js search select component with NO dependencies.
 
 + CSS borrowed from <https://github.com/Semantic-Org>
 
+## Reason for fork
+We had to fork this repo from <https://github.com/moreta/vue-search-select> because 
+we needed the ability to show a tree like structure in the dropdown.
+
+We did this by adding a depth attribute to the dropdown items which required a slight change to the original code.
+
+Additionally, filtering of dropdown items wasn't working correctly for mulitselect lists
+and this also needed a very minor "fix".
+
 ## Version 2.x
 
 + Support Vue.js 2.x
