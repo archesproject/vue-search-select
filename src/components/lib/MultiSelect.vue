@@ -19,6 +19,7 @@
            v-model="searchText"
            ref="input"
            :style="inputWidth"
+           @input="onInput"
            @focus.prevent="openOptions"
            @keyup.esc="closeOptions"
            @blur="blurInput"
@@ -141,6 +142,9 @@ export default {
     }
   },
   methods: {
+    onInput ($event) {
+      this.searchText = $event.target.value;
+    },
     deleteTextOrLastItem () {
       if (!this.searchText && this.selectedOptions.length > 0) {
         this.deleteItem(this.selectedOptions[this.selectedOptions.length - 1])
